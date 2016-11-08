@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>test galery</h1>
+  <masonry>
+    <masonry-brick class="brick" *ngFor="let foo of foo"><img class="image" src="{{foo.photo}}"></masonry-brick>
+  </masonry>
+  <masonry>
+    <masonry-brick class="brick" *ngFor="let brick of bricks">{{brick.title}}</masonry-brick>
+  </masonry>
+</div>

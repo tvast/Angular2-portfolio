@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Edouard_Wolton</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/knacss.css" media="all">
+	<link rel="stylesheet" href="css/styles.css" media="all">
+	<!-- bootstrap -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="all">
+	<!-- masonry -->
+	<script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.js"></script>
+
+
+</head>
+<body>
+	<div class="container">
+		<h1>test edouard moltobn massonry</h1>
+		<div class="grid">
+
+			<!-- <div class="grid-sizer"></div> -->
+			<div class="grid-item grid-item--width2 grid-item--height5" src="img/edouard/image_1"><img ></div>
+			<div class="grid-item grid-item--width2 grid-item--height2"><img  src="img/edouard/image_2.png"></div>
+			<div class="grid-item grid-item--width2 grid-item--height2"><img  src="img/edouard/image_3.png"></div>
+			<div class="grid-item grid-item--width2 grid-item--height2"><img  src="img/edouard/image_4.png"></div>
+			<div class="grid-item grid-item--width2 grid-item--height2"><img  src="img/edouard/image_5.png"></div>
+			<div class="grid-item grid-item--width2 grid-item--height2"><img  src="img/edouard/image_6.png"></div>
+			<div class="grid-item grid-item--width2 grid-item--height2"><img  src="img/edouard/image_7.png"></div>
+			<div class="grid-item grid-item--width2 grid-item--height2"><img  src="img/edouard/image_8.png"></div>
+			<div class="grid-item grid-item--width2 grid-item--height2" ><img src="img/edouard/image_9.png"></div>
+			<div class="grid-item grid-item--width2 grid-item--height2"><img  src="img/edouard/image_10.png"></div>
+			<div class="grid-item grid-item--width2 grid-item--height2"><img  src="img/edouard/image_11.png"></div>
+
+			<!-- <div class="grid-alpha"></div> -->
+		</div>
+
+		<!-- test jquerry -->
+
+		<div class="grid-block-container">
+
+			<div class="grid-block standard">
+				<div class="caption">
+					<h3>Caption Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p><a href="#" class="learn-more">Learn more</a></p>
+				</div>
+				<img src="img/edouard/image_11.png" />
+				<h4>Normal</h4>
+			</div>
+			<!--/.grid-block-->
+
+			<div class="grid-block fade">
+				<div class="caption">
+					<h3>Caption Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p><a href="#" class="learn-more">Learn more</a></p>
+				</div>
+				<img src="img/edouard/image_11.png" />
+				<h4>Fade</h4>
+			</div>
+			<!--/.grid-block-->
+
+			<div class="grid-block slide">
+				<div class="caption">
+					<h3>Caption Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p><a href="#" class="learn-more">Learn more</a></p>
+				</div>
+				<img src="img/edouard/image_11.png" />
+				<h4>Slide</h4>
+			</div>
+			<!--/.grid-block-->
+
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="js/masonry.pkgd.js"></script>
+	<script src="js/grid.js"></script>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('.standard').hover(
+			function(){
+				$(this).find('.caption').show();
+			},
+			function(){
+				$(this).find('.caption').hide();
+			}
+		);
+		$('.fade').hover(
+			function(){
+				$(this).find('.caption').fadeIn(250);
+			},
+			function(){
+				$(this).find('.caption').fadeOut(250);
+			}
+		);
+		$('.slide').hover(
+			function(){
+				$(this).find('.caption').slideDown(250);
+			},
+			function(){
+				$(this).find('.caption').slideUp(250);
+			}
+		);
+	});
+	</script>
+
+</body>
+</html>
