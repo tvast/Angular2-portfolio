@@ -4,6 +4,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent }  from './app.component';
 import { FooComponent } from './foo.component';
+import { BioComponent } from './bio.component';
+import { ContactComponent } from './contact.component';
+
 
 import { MasonryModule } from 'angular2-masonry';
 
@@ -13,7 +16,9 @@ import { MasonryModule } from 'angular2-masonry';
                   MasonryModule
    ],
   declarations: [ AppComponent,
-                  FooComponent
+                  FooComponent,
+                  ContactComponent,
+                  BioComponent
 
                 ],
   bootstrap:    [ AppComponent ]

@@ -2,14 +2,16 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
 
 import { FooComponent } from './foo.component';
+import { BioComponent } from './bio.component';
+import { ContactComponent } from './contact.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: '/oeuvre', pathMatch: 'full' },
 
   { path: 'oeuvre',  component: FooComponent },
-  // { path: 'inscription',     component: FormComponent },
-  // { path: 'home', component: HomeComponent },
+  { path: 'bio',     component: BioComponent },
+  { path: 'contact', component: ContactComponent },
   // { path: 'bear/:id', component: BearDetailComponent }
 ];
 

@@ -1,0 +1,18 @@
+.head {
+  background: url("app/img/edouard/image_2.png");
+  background-repeat:no-repeat;
+  background-position:center center;
+
+}
+
+.middle {
+  background: url("app/img/edouard/image_3.png");
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+
+.end {
+  background: url("app/img/edouard/image_4.png");
+  background-repeat:no-repeat;
+  background-position:center center;
+}
