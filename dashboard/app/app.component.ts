@@ -6,14 +6,16 @@ import { Component } from '@angular/core';
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
           <a id="logo-container" href="#" class="brand-logo">EW</a>
-          <ul class="right hide-on-med-and-down">
+          <ul class="menu right hide-on-med-and-down">
             <li><a routerLink="/bio">Bio</a></li>
             <li><a routerLink="/contact">Contact</a></li>
+              <li><a routerLink="/secretpath">Admin</a></li>
           </ul>
 
           <ul id="nav-mobile" class="side-nav">
           <li><a routerLink="/bio">Bio</a></li>
           <li><a routerLink="/contact">Contact</a></li>
+          <li><a routerLink="/secretpath">Admin</a></li>
           </ul>
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
@@ -28,6 +30,8 @@ import { Component } from '@angular/core';
           @ VAST 2016</small></em></p>
       </div>
       </div>
-      `
+      `,
+      styleUrls: ['app/app.component.css']
+
 })
 export class AppComponent { }

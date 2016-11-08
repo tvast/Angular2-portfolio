@@ -4,6 +4,7 @@ import { RouterModule, Routes} from '@angular/router';
 import { FooComponent } from './foo.component';
 import { BioComponent } from './bio.component';
 import { ContactComponent } from './contact.component';
+import { AdminComponent } from './admin.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'oeuvre',  component: FooComponent },
   { path: 'bio',     component: BioComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'secretpath', component: AdminComponent },
   // { path: 'bear/:id', component: BearDetailComponent }
 ];
 

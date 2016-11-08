@@ -1,3 +1,7 @@
+#titreGallerie {
+  font-family: 'Poiret One', cursive;
+}
+
 .grid {
   max-width: 100%;
   position: relative;
