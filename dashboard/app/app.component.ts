@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
           <ul class="menu right hide-on-med-and-down">
             <li><a routerLink="/bio">Bio</a></li>
             <li><a routerLink="/contact">Contact</a></li>
-              <li><a routerLink="/secretpath">Admin</a></li>
+              <li><a routerLink="/login"> <i class="material-icons">vpn_key</i></a></li>
           </ul>
 
           <ul id="nav-mobile" class="side-nav">

@@ -5,6 +5,7 @@ import { FooComponent } from './foo.component';
 import { BioComponent } from './bio.component';
 import { ContactComponent } from './contact.component';
 import { AdminComponent } from './admin.component';
+import { LoginComponent } from './login.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'bio',     component: BioComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'secretpath', component: AdminComponent },
+  { path: 'login', component: LoginComponent  },
   // { path: 'bear/:id', component: BearDetailComponent }
 ];
 
