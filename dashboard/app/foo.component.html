@@ -2,7 +2,7 @@
   <h1 id="titreGallerie">test galery</h1>
   <masonry>
     <masonry-brick class="brick" *ngFor="let foo of foo">
-      <img class="image materialboxed" src="{{foo.photo}}">
+      <img (click)="viewLarge()"class="image materialboxed" src="{{foo.photo}}">
       <span class="text-content"><span>{{foo.text}}</span></span>
     </masonry-brick>
   </masonry>

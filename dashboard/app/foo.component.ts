@@ -62,4 +62,10 @@ export class FooComponent {
 
   ngOnInit() {
   }
+
+  viewLarge () {
+    $(document).ready(function(){
+   $('.materialboxed').materialbox();
+ });
+  }
 }

@@ -64,6 +64,11 @@ var FooComponent = (function () {
     }
     FooComponent.prototype.ngOnInit = function () {
     };
+    FooComponent.prototype.viewLarge = function () {
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+        });
+    };
     FooComponent = __decorate([
         core_1.Component({
             selector: 'foo',
