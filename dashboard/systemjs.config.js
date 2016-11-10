@@ -1,7 +1,7 @@
 /**
- * System configuration for Angular samples
- * Adjust as necessary for your application needs.
- */
+* System configuration for Angular samples
+* Adjust as necessary for your application needs.
+*/
 (function (global) {
   System.config({
     paths: {
@@ -25,10 +25,14 @@
       '@angular/upgrade': 'npm:@angular/upgrade/bundles/upgrade.umd.js',
 
       // other libraries
-      'rxjs':                      'npm:rxjs',
-      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
-      "angular2-masonry":           "node_modules/angular2-masonry",
-      "masonry-layout":             "node_modules/masonry-layout/dist/masonry.pkgd.js"
+      'rxjs':                       'npm:rxjs',
+      'angular-in-memory-web-api':  'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
+      "angular2-masonry":           "npm:angular2-masonry",
+      "masonry-layout":             "npm:masonry-layout/dist/masonry.pkgd.js",
+      // "ng2-file-upload":            "npm:ng2-file-upload/ng2-file-upload.js",
+      'ng2-file-upload':            'npm:ng2-file-upload/ng2-file-upload.js',
+      'moment': 'node_modules/moment/moment.js'
+      // 'ng2-bootstrap/ng2-bootstrap': 'node_modules/ng2-bootstrap/bundles/ng2-bootstrap.umd.js',
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -39,6 +43,7 @@
       rxjs: {
         defaultExtension: 'js'
       },
+      'ng2-file-upload': { format: 'cjs', defaultExtension: 'js'},
       "angular2-masonry": { "defaultExtension": "js", "main": "index" }
 
     }

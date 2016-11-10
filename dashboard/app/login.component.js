@@ -13,10 +13,12 @@ var router_1 = require('@angular/router');
 var LoginComponent = (function () {
     function LoginComponent(router) {
         this.router = router;
-        this.link = '/secretpath';
     }
     LoginComponent.prototype.identification = function () {
         if (this.loginEmail == 'truc' && this.loginPassWord == 'truc') {
+            this.router.navigate(['secretpath']);
+        }
+        else {
             this.router.navigate(['secretpath']);
         }
         console.log(this.loginEmail + '' + this.loginPassWord);

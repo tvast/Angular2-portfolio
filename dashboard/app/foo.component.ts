@@ -63,9 +63,9 @@ export class FooComponent {
   ngOnInit() {
   }
 
-  viewLarge () {
-    $(document).ready(function(){
-   $('.materialboxed').materialbox();
- });
-  }
+ //  viewLarge () {
+ //    $(document).ready(function(){
+ //   $('.materialboxed').materialbox();
+ // });
+ //  }
 }

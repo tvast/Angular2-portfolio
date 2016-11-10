@@ -10,7 +10,6 @@ import { Router }            from '@angular/router';
 export class LoginComponent {
   loginEmail : string;
   loginPassWord : string;
-  link: any = '/secretpath'
 
   constructor(
     private router: Router) {
@@ -18,6 +17,10 @@ export class LoginComponent {
 
     identification () {
       if(this.loginEmail == 'truc' && this.loginPassWord =='truc') {
+        this.router.navigate(['secretpath']);
+        // this._router.navigate(['CheckDetail', { id: checkId }]);
+      }
+      else {
         this.router.navigate(['secretpath']);
         // this._router.navigate(['CheckDetail', { id: checkId }]);
       }

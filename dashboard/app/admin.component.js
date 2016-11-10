@@ -9,10 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+// import { FileUploader } from 'ng2-bootstrap/ng2-bootstrap';
+var ng2_file_upload_1 = require('ng2-file-upload/ng2-file-upload');
+// webpack html imports
+// let template = require('./simple-demo.html');
+// const URL = '/api/';
+var URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
 var AdminComponent = (function () {
     function AdminComponent() {
+        this.uploader = new ng2_file_upload_1.FileUploader({ url: URL });
+        this.hasBaseDropZoneOver = false;
+        this.hasAnotherDropZoneOver = false;
     }
     AdminComponent.prototype.ngOnInit = function () {
+    };
+    AdminComponent.prototype.fileOverBase = function (e) {
+        this.hasBaseDropZoneOver = e;
+    };
+    AdminComponent.prototype.fileOverAnother = function (e) {
+        this.hasAnotherDropZoneOver = e;
     };
     AdminComponent = __decorate([
         core_1.Component({
