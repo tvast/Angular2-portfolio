@@ -30,8 +30,8 @@
       "angular2-masonry":           "npm:angular2-masonry",
       "masonry-layout":             "npm:masonry-layout/dist/masonry.pkgd.js",
       // "ng2-file-upload":            "npm:ng2-file-upload/ng2-file-upload.js",
-      'ng2-file-upload':            'npm:ng2-file-upload/ng2-file-upload.js',
-      'moment': 'node_modules/moment/moment.js'
+      // 'ng2-file-upload':            'npm:ng2-file-upload/ng2-file-upload.js',
+      'moment':                     'node_modules/moment/moment.js'
       // 'ng2-bootstrap/ng2-bootstrap': 'node_modules/ng2-bootstrap/bundles/ng2-bootstrap.umd.js',
     },
     // packages tells the System loader how to load when no filename and/or no extension
@@ -43,7 +43,7 @@
       rxjs: {
         defaultExtension: 'js'
       },
-      'ng2-file-upload': { format: 'cjs', defaultExtension: 'js'},
+      // 'ng2-file-upload': { format: 'cjs', defaultExtension: 'js'},
       "angular2-masonry": { "defaultExtension": "js", "main": "index" }
 
     }
