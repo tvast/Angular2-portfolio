@@ -10,6 +10,7 @@ import { BioComponent } from './bio.component';
 import { ContactComponent } from './contact.component';
 import { AdminComponent } from './admin.component';
 import { LoginComponent } from './login.component';
+import { HomeComponent } from './home.component';
 
 
 
@@ -27,7 +28,8 @@ import { MasonryModule } from 'angular2-masonry';
                   ContactComponent,
                   BioComponent,
                   AdminComponent,
-                  LoginComponent
+                  LoginComponent,
+                  HomeComponent
 
                 ],
   bootstrap:    [ AppComponent ]
