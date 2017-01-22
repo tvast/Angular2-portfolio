@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     template: `
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
-          <a id="logo-container" href="#" class="brand-logo">EW</a>
+          <a id="logo-container" href="#" class="animated bounceIn brand-logo">EW</a>
 
           <ul class="menu right hide-on-med-and-down">
           <li><a routerLink="/home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>

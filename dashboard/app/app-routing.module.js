@@ -14,7 +14,7 @@ var admin_component_1 = require("./admin.component");
 var login_component_1 = require("./login.component");
 var home_component_1 = require("./home.component");
 var routes = [
-    { path: '', redirectTo: '/oeuvre', pathMatch: 'full' },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'oeuvre', component: foo_component_1.FooComponent },
     { path: 'bio', component: bio_component_1.BioComponent },
     { path: 'contact', component: contact_component_1.ContactComponent },
