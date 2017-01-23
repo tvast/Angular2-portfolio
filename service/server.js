@@ -2,7 +2,7 @@
 // =============================================================================
 // TUTO : https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
 // call the packages we need
-//mongodb://bbwvm:test@waffle.modulusmongo.net:27017/poP5epon
+//mongodb://test:test@waffle.modulusmongo.net:27017/poP5epon
 
 
 var express    = require('express');
@@ -28,7 +28,7 @@ var port     = process.env.PORT || 8081; // set our port
 
 var mongoose   = require('mongoose');
 //mongoose.connect('mongodb://localhost:27017'); // connect to our database  mongodb://<user>:<pass>@waffle.modulusmongo.net:27017/yzY5qewy
-mongoose.connect('mongodb://test:test@waffle.modulusmongo.net:27017/poP5epon');
+mongoose.connect('mongodb://test:test@jello.modulusmongo.net:27017/natur3oJ');
 var Oeuvre     = require('./app/models/oeuvre');
 
 // ROUTES FOR OUR API
@@ -57,19 +57,12 @@ router.route('/oeuvres')
 	.post(function(req, res) {
 
 		var oeuvre = new Oeuvre();		// create a new instance of the oeuvre model
-		oeuvre.name = req.body.name;  // set the oeuvres name (comes from the request)
-		oeuvre.age = req.body.age;
-		oeuvre.cover = req.body.cover;
-		oeuvre.description = req.body.description;
-		oeuvre.profilePic = req.body.profilePic;
-		oeuvre.profilePic = req.body.profilePic;
-		oeuvre.infos = req.body.infos;
-		oeuvre.sounds = req.body.sounds;
-		oeuvre.amis = req.body.amis;
-		oeuvre.message = req.body.message;
-		oeuvre.gigs = req.body.gigs;
-
-
+		oeuvre.nom = req.body.nom;  // set the oeuvres name (comes from the request)
+		oeuvre.img = req.body.img;
+		oeuvre.dimensionLarg = req.body.dimensionLarg;
+		oeuvre.dimensionLong = req.body.dimensionLong;
+		oeuvre.date = req.body.date;
+		
 		oeuvre.save(function(err) {
 			if (err)
 				res.send(err);
@@ -122,11 +115,10 @@ router.route('/oeuvres/:oeuvre_id')
 		});
 	})
 
-	// delete the oeuvre with this id
 	.delete(function(req, res) {
-		oeuvre.remove({
-			_id: req.params.oeuvre_id
-		}, function(err, oeuvre) {
+		Oeuvre.remove({
+			_id: req.params.bear_id
+		}, function(err, bear) {
 			if (err)
 				res.send(err);
 

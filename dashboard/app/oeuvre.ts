@@ -1,14 +1,11 @@
 export class Oeuvre {
-  	name : string; 
-  	password : string;
-	cover : string; 
-	profilePic : string; 
-	description: string; 
-	infos : string; 
-	gigs : string;
-	age : number;
-	id : any;
+  	nom : string; 
+  	img : string;
+	dimensionLong : string; 
+	dimensionLarg : string; 
+	date : string; 
+	id : number;
+
 
 }
-
 
