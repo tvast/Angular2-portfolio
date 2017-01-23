@@ -1,0 +1,40 @@
+<div class="container">
+
+<h1>Ajout d'une oeuvre</h1>
+  <div class="row">
+    <div class="input-field col s6">
+      <input [(ngModel)]="oeuvre.nom" id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">Nom</label>
+      <img src="{{oeuvre.img}}">
+    </div>
+  </div>
+    <div class="row">
+    <div class="input-field col s6">
+      <input [(ngModel)]="oeuvre.img" id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">Image</label>
+    </div>
+  </div>
+    <div class="row">
+    <div class="input-field col s6">
+      <input [(ngModel)]="oeuvre.dimensionLong" id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">Longueur</label>
+    </div>
+  </div>
+    <div class="row">
+    <div class="input-field col s6">
+      <input [(ngModel)]="oeuvre.dimensionLarg" id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">Largeur</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="input-field col s6">
+      <input [(ngModel)]="oeuvre.date" type="date" class="datepicker">
+      <label class="active" for="first_name2">Date</label>
+    </div>
+  </div>
+
+
+<a (click)=saveOeuvre() class="waves-effect waves-light btn">button</a>
+
+  </div>

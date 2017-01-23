@@ -17,6 +17,7 @@ var admin_component_1 = require("./admin.component");
 var login_component_1 = require("./login.component");
 var home_component_1 = require("./home.component");
 var oeuvre_detail_component_1 = require("./oeuvre-detail.component");
+var form_component_1 = require("./form.component");
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'oeuvre', component: foo_component_1.FooComponent },
@@ -26,6 +27,7 @@ var routes = [
     { path: 'login', component: login_component_1.LoginComponent },
     { path: 'home', component: home_component_1.HomeComponent },
     { path: 'liste', component: oeuvre_detail_component_1.OeuvreComponent },
+    { path: 'form', component: form_component_1.FormComponent },
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

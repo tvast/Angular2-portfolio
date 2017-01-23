@@ -22,6 +22,7 @@ var admin_component_1 = require("./admin.component");
 var login_component_1 = require("./login.component");
 var home_component_1 = require("./home.component");
 var oeuvre_detail_component_1 = require("./oeuvre-detail.component");
+var form_component_1 = require("./form.component");
 var angular2_masonry_1 = require("angular2-masonry");
 var AppModule = (function () {
     function AppModule() {
@@ -43,7 +44,8 @@ AppModule = __decorate([
             admin_component_1.AdminComponent,
             login_component_1.LoginComponent,
             home_component_1.HomeComponent,
-            oeuvre_detail_component_1.OeuvreComponent
+            oeuvre_detail_component_1.OeuvreComponent,
+            form_component_1.FormComponent
         ],
         providers: [oeuvre_service_1.OeuvreService],
         bootstrap: [app_component_1.AppComponent]

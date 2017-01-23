@@ -8,6 +8,7 @@ import { AdminComponent } from './admin.component';
 import { LoginComponent } from './login.component';
 import { HomeComponent } from './home.component';
 import { OeuvreComponent } from './oeuvre-detail.component';
+import { FormComponent } from './form.component'; 
 
 
 
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent  },
   { path: 'home', component: HomeComponent  },
   { path: 'liste', component: OeuvreComponent  },
+  { path: 'form', component: FormComponent  },
 
   // { path: 'bear/:id', component: BearDetailComponent }
 ];
