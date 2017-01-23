@@ -2,6 +2,9 @@
 // =============================================================================
 // TUTO : https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
 // call the packages we need
+//mongodb://bbwvm:test@waffle.modulusmongo.net:27017/poP5epon
+
+
 var express    = require('express');
 var bodyParser = require('body-parser');
 var app        = express();
@@ -13,7 +16,7 @@ app.use(morgan('dev')); // log requests to the console
 
 app.use(cors());
 
-// app.get('/api/bears', function(req, res, next){
+// app.get('/api/oeuvres', function(req, res, next){
 //   res.json({msg: 'This is CORS-enabled for all origins!'});
 // });
 
@@ -24,9 +27,9 @@ app.use(bodyParser.json());
 var port     = process.env.PORT || 8081; // set our port
 
 var mongoose   = require('mongoose');
-// mongoose.connect('mongodb://localhost:27017'); // connect to our database  mongodb://<user>:<pass>@waffle.modulusmongo.net:27017/yzY5qewy
-mongoose.connect('mongodb://localhost:27017');
-var Bear     = require('./app/models/bear');
+//mongoose.connect('mongodb://localhost:27017'); // connect to our database  mongodb://<user>:<pass>@waffle.modulusmongo.net:27017/yzY5qewy
+mongoose.connect('mongodb://test:test@waffle.modulusmongo.net:27017/poP5epon');
+var Oeuvre     = require('./app/models/oeuvre');
 
 // ROUTES FOR OUR API
 // =============================================================================
@@ -46,85 +49,84 @@ router.get('/', function(req, res) {
 	res.json({ message: 'hooray! welcome to our api!' });
 });
 
-// on routes that end in /bears
+// on routes that end in /oeuvres
 // ----------------------------------------------------
-router.route('/bears')
+router.route('/oeuvres')
 
-	// create a bear (accessed at POST http://localhost:8080/bears)
+	// create a oeuvre (accessed at POST http://localhost:8080/oeuvres)
 	.post(function(req, res) {
 
-		var bear = new Bear();		// create a new instance of the Bear model
-		bear.name = req.body.name;  // set the bears name (comes from the request)
-		bear.age = req.body.age;
-		bear.photo = req.body.photo;
-		bear.description = req.body.description
+		var oeuvre = new Oeuvre();		// create a new instance of the oeuvre model
+		oeuvre.name = req.body.name;  // set the oeuvres name (comes from the request)
+		oeuvre.age = req.body.age;
+		oeuvre.cover = req.body.cover;
+		oeuvre.description = req.body.description;
+		oeuvre.profilePic = req.body.profilePic;
+		oeuvre.profilePic = req.body.profilePic;
+		oeuvre.infos = req.body.infos;
+		oeuvre.sounds = req.body.sounds;
+		oeuvre.amis = req.body.amis;
+		oeuvre.message = req.body.message;
+		oeuvre.gigs = req.body.gigs;
 
 
-		// name:    String,
-		// photo:    String,
-		// description:    String,
-		// amis: [],
-		// message[],
-		// age:     { type: Number, min: 18, max: 65 },
-		// updated: { type: Date, default: Date.now },
-
-		bear.save(function(err) {
+		oeuvre.save(function(err) {
 			if (err)
 				res.send(err);
 
-			res.json({ message: 'Bear created!' });
+			res.json({ message: 'Oeuvre created!' });
 		});
 
 
 	})
 
-	// get all the bears (accessed at GET http://localhost:8080/api/bears)
+	// get all the oeuvres (accessed at GET http://localhost:8080/api/oeuvres)
 	.get(function(req, res) {
-		Bear.find(function(err, bears) {
+		Oeuvre.find(function(err, oeuvres) {
 			if (err)
 				res.send(err);
 
-			res.json(bears);
+			res.json(oeuvres);
 		});
 	});
 
-// on routes that end in /bears/:bear_id
+// on routes that end in /oeuvres/:oeuvre_id
 // ----------------------------------------------------
-router.route('/bears/:bear_id')
+router.route('/oeuvres/:oeuvre_id')
 
-	// get the bear with that id
+	// get the oeuvre with that id
 	.get(function(req, res) {
-		Bear.findById(req.params.bear_id, function(err, bear) {
+		Oeuvre.findById(req.params.oeuvre_id, function(err, oeuvre) {
 			if (err)
 				res.send(err);
-			res.json(bear);
+			res.json(oeuvre);
 		});
 	})
 
-	// update the bear with this id
+	// update the oeuvre with this id
 	.put(function(req, res) {
-		Bear.findById(req.params.bear_id, function(err, bear) {
+		Oeuvre.findById(req.params.oeuvre_id, function(err, oeuvre) {
 
 			if (err)
 				res.send(err);
 
-			bear.name = req.body.name;
+			oeuvre.name = req.body.name;
 
-			bear.save(function(err) {
+			oeuvre.save(function(err) {
 				if (err)
 					res.send(err);
 
-				res.json({ message: 'Bear updated!' });
+				res.json({ message: 'oeuvre updated!' });
 			});
 
 		});
 	})
 
-	// delete the bear with this id
+	// delete the oeuvre with this id
 	.delete(function(req, res) {
-		Bear.remove({
-			_id: req.params.bear_id
-		}, function(err, bear) {
+		oeuvre.remove({
+			_id: req.params.oeuvre_id
+		}, function(err, oeuvre) {
 			if (err)
 				res.send(err);
 
