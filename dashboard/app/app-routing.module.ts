@@ -7,6 +7,7 @@ import { ContactComponent } from './contact.component';
 import { AdminComponent } from './admin.component';
 import { LoginComponent } from './login.component';
 import { HomeComponent } from './home.component';
+import { OeuvreComponent } from './oeuvre-detail.component';
 
 
 
@@ -19,6 +20,8 @@ const routes: Routes = [
   { path: 'secretpath', component: AdminComponent },
   { path: 'login', component: LoginComponent  },
   { path: 'home', component: HomeComponent  },
+  { path: 'liste', component: OeuvreComponent  },
+
   // { path: 'bear/:id', component: BearDetailComponent }
 ];
 

@@ -13,6 +13,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var app_routing_module_1 = require("./app-routing.module");
 var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
+var oeuvre_service_1 = require("./oeuvre.service");
 var app_component_1 = require("./app.component");
 var foo_component_1 = require("./foo.component");
 var bio_component_1 = require("./bio.component");
@@ -20,6 +21,7 @@ var contact_component_1 = require("./contact.component");
 var admin_component_1 = require("./admin.component");
 var login_component_1 = require("./login.component");
 var home_component_1 = require("./home.component");
+var oeuvre_detail_component_1 = require("./oeuvre-detail.component");
 var angular2_masonry_1 = require("angular2-masonry");
 var AppModule = (function () {
     function AppModule() {
@@ -40,8 +42,10 @@ AppModule = __decorate([
             bio_component_1.BioComponent,
             admin_component_1.AdminComponent,
             login_component_1.LoginComponent,
-            home_component_1.HomeComponent
+            home_component_1.HomeComponent,
+            oeuvre_detail_component_1.OeuvreComponent
         ],
+        providers: [oeuvre_service_1.OeuvreService],
         bootstrap: [app_component_1.AppComponent]
     }),
     __metadata("design:paramtypes", [])
