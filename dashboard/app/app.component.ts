@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
             <li><a routerLink="/bio"><i class="fa fa-id-card-o" aria-hidden="true"></i> Bio</a></li>
             <li><a routerLink="/bio"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Presse</a></li>
             <li><a routerLink="/contact"><i class="fa fa-paper-plane" aria-hidden="true"></i> Contact</a></li>
+            <li><a routerLink="/homeslide"><i class="fa fa-paper-plane" aria-hidden="true"></i> slide</a></li>
               
           </ul>
 
@@ -26,7 +27,7 @@ import { Component } from '@angular/core';
       </nav>
       <router-outlet></router-outlet>
 
-      <footer class="page-footer black">
+      <footer class="menu page-footer black">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -70,4 +71,17 @@ import { Component } from '@angular/core';
       styleUrls: ['app/app.component.css']
 
 })
-export class AppComponent { }
+export class AppComponent {
+
+  ngOnInit () {
+  //     $('.button-collapse').sideNav({
+  //     menuWidth: 240, // Default is 240
+  //     edge: 'left', // Choose the horizontal origin
+  //     closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+  //     draggable: true // Choose whether you can drag to open on touch screens
+  //   }
+  // );
+  }
+
+
+ }

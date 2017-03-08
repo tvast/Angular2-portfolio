@@ -36,6 +36,7 @@
     "@angular/upgrade": "~2.1.1",
     "angular-in-memory-web-api": "~0.1.13",
     "angular2-masonry": "^0.3.0",
+    "barba.js": "^1.0.0",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "materialize-css": "^0.97.8",

@@ -11,6 +11,7 @@ import { ContactComponent } from './contact.component';
 import { AdminComponent } from './admin.component';
 import { LoginComponent } from './login.component';
 import { HomeComponent } from './home.component';
+import { HomeSlideComponent } from './homeslide.component';
 
 
 
@@ -29,7 +30,8 @@ import { MasonryModule } from 'angular2-masonry';
                   BioComponent,
                   AdminComponent,
                   LoginComponent,
-                  HomeComponent
+                  HomeComponent,
+                  HomeSlideComponent
 
                 ],
   bootstrap:    [ AppComponent ]

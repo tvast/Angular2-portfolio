@@ -12,7 +12,9 @@ import { Component } from '@angular/core';
         <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
       </div>
       <div class="row center">
-        <a routerLink="/oeuvre" id="download-button" class="btn-large waves-effect waves-light black">Bienvenue sur le site d'Edouard Wolton</a>
+        <a routerLink="/oeuvre" id="download-button" 
+        class="btn-large waves-effect waves-light black">
+        Bienvenue sur le site d'Edouard Wolton</a>
       </div>
       <br><br>
 

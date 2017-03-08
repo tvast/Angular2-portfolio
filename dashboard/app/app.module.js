@@ -17,6 +17,7 @@ var contact_component_1 = require("./contact.component");
 var admin_component_1 = require("./admin.component");
 var login_component_1 = require("./login.component");
 var home_component_1 = require("./home.component");
+var homeslide_component_1 = require("./homeslide.component");
 var angular2_masonry_1 = require("angular2-masonry");
 var AppModule = (function () {
     function AppModule() {
@@ -37,7 +38,8 @@ AppModule = __decorate([
             bio_component_1.BioComponent,
             admin_component_1.AdminComponent,
             login_component_1.LoginComponent,
-            home_component_1.HomeComponent
+            home_component_1.HomeComponent,
+            homeslide_component_1.HomeSlideComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })
