@@ -1,17 +1,20 @@
 import { Component } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { MasonryModule } from 'angular2-masonry';
 
 @Component({
     selector: 'homecomponent',
     template: `
 
-      <a class="cd-nav-trigger cd-text-replace" href="#primary-nav">Menu<span aria-hidden="true" class="cd-icon"></span></a>
+      
   
   <div class="cd-projects-container">
     <ul class="cd-projects-previews">
       <li>
         <a href="#0">
           <div class="cd-project-title">
-            <h2>Project 1</h2>
+            <h2>Peinture</h2>
             <p>Brief description of the project here</p>
           </div>
         </a>
@@ -20,7 +23,7 @@ import { Component } from '@angular/core';
       <li>
         <a href="#0">
           <div class="cd-project-title">
-            <h2>Project 2</h2>
+            <h2>Print</h2>
             <p>Brief description of the project here</p>
           </div>
         </a>
@@ -29,7 +32,7 @@ import { Component } from '@angular/core';
       <li>
         <a href="#0">
           <div class="cd-project-title">
-            <h2>Project 3</h2>
+            <h2>Instalation</h2>
             <p>Brief description of the project here</p>
           </div>
         </a>
@@ -38,7 +41,7 @@ import { Component } from '@angular/core';
       <li>
         <a href="#0">
           <div class="cd-project-title">
-            <h2>Project 4</h2>
+            <h2>Presse</h2>
             <p>Brief description of the project here</p>
           </div>
         </a>
@@ -55,12 +58,12 @@ import { Component } from '@angular/core';
         </div>
 
         <div class="cd-project-info">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-          </p>
+          <masonry>
+    <masonry-brick class="brick" *ngFor="let foo of foo">
+      <img (click)="viewLarge()"class="image materialboxed" src="{{foo.photo}}">
+      <span class="text-content"><span>{{foo.text}}</span></span>
+    </masonry-brick>
+  </masonry>
         </div> <!-- .cd-project-info -->
       </li>
 
@@ -73,12 +76,12 @@ import { Component } from '@angular/core';
         </div>
 
         <div class="cd-project-info">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-          </p>
+         <masonry>
+    <masonry-brick class="brick" *ngFor="let foo of foo">
+      <img (click)="viewLarge()"class="image materialboxed" src="{{foo.photo}}">
+      <span class="text-content"><span>{{foo.text}}</span></span>
+    </masonry-brick>
+  </masonry>
         </div> <!-- .cd-project-info -->
       </li>
 
@@ -91,12 +94,12 @@ import { Component } from '@angular/core';
         </div>
 
         <div class="cd-project-info">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-          </p>
+         <masonry>
+    <masonry-brick class="brick" *ngFor="let foo of foo">
+      <img (click)="viewLarge()"class="image materialboxed" src="{{foo.photo}}">
+      <span class="text-content"><span>{{foo.text}}</span></span>
+    </masonry-brick>
+  </masonry>
         </div> <!-- .cd-project-info -->
       </li>
 
@@ -109,12 +112,12 @@ import { Component } from '@angular/core';
         </div>
 
         <div class="cd-project-info">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-          </p>
+          <masonry>
+    <masonry-brick class="brick" *ngFor="let foo of foo">
+      <img (click)="viewLarge()"class="image materialboxed" src="{{foo.photo}}">
+      <span class="text-content"><span>{{foo.text}}</span></span>
+    </masonry-brick>
+  </masonry>
         </div> <!-- .cd-project-info -->
       </li>
     </ul> <!-- .cd-projects -->
@@ -122,15 +125,7 @@ import { Component } from '@angular/core';
     <button class="scroll cd-text-replace">Scroll</button>
   </div> <!-- .cd-project-container -->
 
-  <nav class="cd-primary-nav" id="primary-nav">
-    <ul>
-      <li class="cd-label">Navigation</li>
-      <li><a href="#0">The team</a></li>
-      <li><a href="#0">Our services</a></li>
-      <li><a href="#0">Our projects</a></li>
-      <li><a href="#0">Contact us</a></li>
-    </ul>
-  </nav>
+
 
 
       `,
@@ -138,6 +133,58 @@ import { Component } from '@angular/core';
 
 })
 export class HomeSlideComponent {
+
+    bricks = [
+    {title: 'Brick 1'},
+    {title: 'Brick 2'},
+    {title: 'Brick 3'},
+    {title: 'Brick 4'},
+    {title: 'Brick 5'},
+    {title: 'Brick 6'}
+  ]
+  foo = [
+    {photo:'app/img/edouard/image_2.png', text:'hello'},
+    {photo:'app/img/edouard/image_3.png', text:'hello'},
+    {photo:'app/img/edouard/image_4.png', text:'hello'},
+    {photo:'app/img/edouard/image_5.png', text:'hello'},
+    {photo:'app/img/edouard/image_6.png', text:'hello'},
+    {photo:'app/img/edouard/image_7.png', text:'hello'},
+    {photo:'app/img/edouard/image_8.png', text:'hello'},
+    {photo:'app/img/edouard/image_9.png', text:'hello'},
+    {photo:'app/img/edouard/image_10.png', text:'hello'},
+    {photo:'app/img/edouard/image_11.png', text:'hello'},
+    {photo:'app/img/edouard/image_2.png', text:'hello'},
+    {photo:'app/img/edouard/image_3.png', text:'hello'},
+    {photo:'app/img/edouard/image_4.png', text:'hello'},
+    {photo:'app/img/edouard/image_5.png', text:'hello'},
+    {photo:'app/img/edouard/image_6.png', text:'hello'},
+    {photo:'app/img/edouard/image_7.png', text:'hello'},
+    {photo:'app/img/edouard/image_8.png', text:'hello'},
+    {photo:'app/img/edouard/image_9.png', text:'hello'},
+    {photo:'app/img/edouard/image_10.png', text:'hello'},
+    {photo:'app/img/edouard/image_11.png', text:'hello'},
+    {photo:'app/img/edouard/image_2.png', text:'hello'},
+    {photo:'app/img/edouard/image_3.png', text:'hello'},
+    {photo:'app/img/edouard/image_4.png', text:'hello'},
+    {photo:'app/img/edouard/image_5.png', text:'hello'},
+    {photo:'app/img/edouard/image_6.png', text:'hello'},
+    {photo:'app/img/edouard/image_7.png', text:'hello'},
+    {photo:'app/img/edouard/image_8.png', text:'hello'},
+    {photo:'app/img/edouard/image_9.png', text:'hello'},
+    {photo:'app/img/edouard/image_10.png', text:'hello'},
+    {photo:'app/img/edouard/image_11.png', text:'hello'},
+    {photo:'app/img/edouard/image_2.png', text:'hello'},
+    {photo:'app/img/edouard/image_3.png', text:'hello'},
+    {photo:'app/img/edouard/image_4.png', text:'hello'},
+    {photo:'app/img/edouard/image_5.png', text:'hello'},
+    {photo:'app/img/edouard/image_6.png', text:'hello'},
+    {photo:'app/img/edouard/image_7.png', text:'hello'},
+    {photo:'app/img/edouard/image_8.png', text:'hello'},
+    {photo:'app/img/edouard/image_9.png', text:'hello'},
+    {photo:'app/img/edouard/image_10.png', text:'hello'},
+    {photo:'app/img/edouard/image_11.png', text:'hello'}
+  ];
+  $ : any;
 
   ngOnInit () {
 
