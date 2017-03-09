@@ -5,6 +5,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var HomeSlideComponent = (function () {
     function HomeSlideComponent() {
@@ -59,6 +60,12 @@ var HomeSlideComponent = (function () {
             { photo: 'app/img/edouard/image_11.png', text: 'hello' }
         ];
     }
+    // uniqueRandoms : any;
+    // projectPreview : any;
+    // projectsPreviewWrapper : any;
+    // projectIndex : any;
+    // index : any;
+    // bool : any;
     HomeSlideComponent.prototype.ngOnInit = function () {
         jQuery(document).ready(function ($) {
             //cache DOM elements
@@ -235,7 +242,7 @@ var HomeSlideComponent = (function () {
 HomeSlideComponent = __decorate([
     core_1.Component({
         selector: 'homecomponent',
-        template: "\n\n      \n  \n  <div class=\"cd-projects-container\">\n    <ul class=\"cd-projects-previews\">\n      <li>\n        <a href=\"#0\">\n          <div class=\"cd-project-title\">\n            <h2>Peinture</h2>\n            <p>Brief description of the project here</p>\n          </div>\n        </a>\n      </li>\n\n      <li>\n        <a href=\"#0\">\n          <div class=\"cd-project-title\">\n            <h2>Print</h2>\n            <p>Brief description of the project here</p>\n          </div>\n        </a>\n      </li>\n      \n      <li>\n        <a href=\"#0\">\n          <div class=\"cd-project-title\">\n            <h2>Instalation</h2>\n            <p>Brief description of the project here</p>\n          </div>\n        </a>\n      </li>\n      \n      <li>\n        <a href=\"#0\">\n          <div class=\"cd-project-title\">\n            <h2>Presse</h2>\n            <p>Brief description of the project here</p>\n          </div>\n        </a>\n      </li>\n    </ul> <!-- .cd-projects-previews -->\n\n    <ul class=\"cd-projects\">\n      <li>\n        <div class=\"preview-image\">\n          <div class=\"cd-project-title\">\n            <h2>Project 1</h2>\n            <p>Brief description of the project here</p>\n          </div> \n        </div>\n\n        <div class=\"cd-project-info\">\n          <masonry>\n    <masonry-brick class=\"brick\" *ngFor=\"let foo of foo\">\n      <img (click)=\"viewLarge()\"class=\"image materialboxed\" src=\"{{foo.photo}}\">\n      <span class=\"text-content\"><span>{{foo.text}}</span></span>\n    </masonry-brick>\n  </masonry>\n        </div> <!-- .cd-project-info -->\n      </li>\n\n      <li>\n        <div class=\"preview-image\">\n          <div class=\"cd-project-title\">\n            <h2>Project 2</h2>\n            <p>Brief description of the project here</p>\n          </div> \n        </div>\n\n        <div class=\"cd-project-info\">\n         <masonry>\n    <masonry-brick class=\"brick\" *ngFor=\"let foo of foo\">\n      <img (click)=\"viewLarge()\"class=\"image materialboxed\" src=\"{{foo.photo}}\">\n      <span class=\"text-content\"><span>{{foo.text}}</span></span>\n    </masonry-brick>\n  </masonry>\n        </div> <!-- .cd-project-info -->\n      </li>\n\n      <li>\n        <div class=\"preview-image\">\n          <div class=\"cd-project-title\">\n            <h2>Project 3</h2>\n            <p>Brief description of the project here</p>\n          </div> \n        </div>\n\n        <div class=\"cd-project-info\">\n         <masonry>\n    <masonry-brick class=\"brick\" *ngFor=\"let foo of foo\">\n      <img (click)=\"viewLarge()\"class=\"image materialboxed\" src=\"{{foo.photo}}\">\n      <span class=\"text-content\"><span>{{foo.text}}</span></span>\n    </masonry-brick>\n  </masonry>\n        </div> <!-- .cd-project-info -->\n      </li>\n\n      <li>\n        <div class=\"preview-image\">\n          <div class=\"cd-project-title\">\n            <h2>Project 4</h2>\n            <p>Brief description of the project here</p>\n          </div> \n        </div>\n\n        <div class=\"cd-project-info\">\n          <masonry>\n    <masonry-brick class=\"brick\" *ngFor=\"let foo of foo\">\n      <img (click)=\"viewLarge()\"class=\"image materialboxed\" src=\"{{foo.photo}}\">\n      <span class=\"text-content\"><span>{{foo.text}}</span></span>\n    </masonry-brick>\n  </masonry>\n        </div> <!-- .cd-project-info -->\n      </li>\n    </ul> <!-- .cd-projects -->\n\n    <button class=\"scroll cd-text-replace\">Scroll</button>\n  </div> <!-- .cd-project-container -->\n\n\n\n\n      ",
+        templateUrl: "app/homeslide.component.html",
         styleUrls: ['app/homeslide.component.css']
     })
 ], HomeSlideComponent);

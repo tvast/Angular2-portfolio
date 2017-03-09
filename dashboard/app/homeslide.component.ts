@@ -1,134 +1,10 @@
 import { Component } from '@angular/core';
-import { Component } from '@angular/core';
 
 import { MasonryModule } from 'angular2-masonry';
 
 @Component({
     selector: 'homecomponent',
-    template: `
-
-      
-  
-  <div class="cd-projects-container">
-    <ul class="cd-projects-previews">
-      <li>
-        <a href="#0">
-          <div class="cd-project-title">
-            <h2>Peinture</h2>
-            <p>Brief description of the project here</p>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a href="#0">
-          <div class="cd-project-title">
-            <h2>Print</h2>
-            <p>Brief description of the project here</p>
-          </div>
-        </a>
-      </li>
-      
-      <li>
-        <a href="#0">
-          <div class="cd-project-title">
-            <h2>Instalation</h2>
-            <p>Brief description of the project here</p>
-          </div>
-        </a>
-      </li>
-      
-      <li>
-        <a href="#0">
-          <div class="cd-project-title">
-            <h2>Presse</h2>
-            <p>Brief description of the project here</p>
-          </div>
-        </a>
-      </li>
-    </ul> <!-- .cd-projects-previews -->
-
-    <ul class="cd-projects">
-      <li>
-        <div class="preview-image">
-          <div class="cd-project-title">
-            <h2>Project 1</h2>
-            <p>Brief description of the project here</p>
-          </div> 
-        </div>
-
-        <div class="cd-project-info">
-          <masonry>
-    <masonry-brick class="brick" *ngFor="let foo of foo">
-      <img (click)="viewLarge()"class="image materialboxed" src="{{foo.photo}}">
-      <span class="text-content"><span>{{foo.text}}</span></span>
-    </masonry-brick>
-  </masonry>
-        </div> <!-- .cd-project-info -->
-      </li>
-
-      <li>
-        <div class="preview-image">
-          <div class="cd-project-title">
-            <h2>Project 2</h2>
-            <p>Brief description of the project here</p>
-          </div> 
-        </div>
-
-        <div class="cd-project-info">
-         <masonry>
-    <masonry-brick class="brick" *ngFor="let foo of foo">
-      <img (click)="viewLarge()"class="image materialboxed" src="{{foo.photo}}">
-      <span class="text-content"><span>{{foo.text}}</span></span>
-    </masonry-brick>
-  </masonry>
-        </div> <!-- .cd-project-info -->
-      </li>
-
-      <li>
-        <div class="preview-image">
-          <div class="cd-project-title">
-            <h2>Project 3</h2>
-            <p>Brief description of the project here</p>
-          </div> 
-        </div>
-
-        <div class="cd-project-info">
-         <masonry>
-    <masonry-brick class="brick" *ngFor="let foo of foo">
-      <img (click)="viewLarge()"class="image materialboxed" src="{{foo.photo}}">
-      <span class="text-content"><span>{{foo.text}}</span></span>
-    </masonry-brick>
-  </masonry>
-        </div> <!-- .cd-project-info -->
-      </li>
-
-      <li>
-        <div class="preview-image">
-          <div class="cd-project-title">
-            <h2>Project 4</h2>
-            <p>Brief description of the project here</p>
-          </div> 
-        </div>
-
-        <div class="cd-project-info">
-          <masonry>
-    <masonry-brick class="brick" *ngFor="let foo of foo">
-      <img (click)="viewLarge()"class="image materialboxed" src="{{foo.photo}}">
-      <span class="text-content"><span>{{foo.text}}</span></span>
-    </masonry-brick>
-  </masonry>
-        </div> <!-- .cd-project-info -->
-      </li>
-    </ul> <!-- .cd-projects -->
-
-    <button class="scroll cd-text-replace">Scroll</button>
-  </div> <!-- .cd-project-container -->
-
-
-
-
-      `,
+    templateUrl: `app/homeslide.component.html`,
       styleUrls: ['app/homeslide.component.css']
 
 })
@@ -185,6 +61,12 @@ export class HomeSlideComponent {
     {photo:'app/img/edouard/image_11.png', text:'hello'}
   ];
   $ : any;
+  // uniqueRandoms : any;
+  // projectPreview : any;
+  // projectsPreviewWrapper : any;
+  // projectIndex : any;
+  // index : any;
+  // bool : any;
 
   ngOnInit () {
 

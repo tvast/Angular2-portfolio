@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var LoginComponent = (function () {
@@ -17,9 +18,11 @@ var LoginComponent = (function () {
     LoginComponent.prototype.identification = function () {
         if (this.loginEmail == 'truc' && this.loginPassWord == 'truc') {
             this.router.navigate(['secretpath']);
+            // this._router.navigate(['CheckDetail', { id: checkId }]);
         }
         else {
             this.router.navigate(['secretpath']);
+            // this._router.navigate(['CheckDetail', { id: checkId }]);
         }
         console.log(this.loginEmail + '' + this.loginPassWord);
     };

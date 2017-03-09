@@ -5,6 +5,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var foo_component_1 = require("./foo.component");
@@ -23,6 +24,7 @@ var routes = [
     { path: 'login', component: login_component_1.LoginComponent },
     { path: 'home', component: home_component_1.HomeComponent },
     { path: 'homeslide', component: homeslide_component_1.HomeSlideComponent }
+    // { path: 'bear/:id', component: BearDetailComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
