@@ -3129,13 +3129,13 @@ span.badge[data-badge-caption]::after {
   content: " " attr(data-badge-caption);
 }
 
-nav ul a span.badge {
+/*nav ul a span.badge {
   display: inline-block;
   float: none;
   margin-left: 4px;
   line-height: 22px;
   height: 22px;
-}
+}*/
 
 .side-nav span.badge.new,
 .collapsible span.badge.new {
@@ -4009,13 +4009,13 @@ input[type=range] + .thumb {
 
 nav {
   color: #fff;
-  background-color: #ee6e73;
+  background-color: #333;
   width: 100%;
   height: 56px;
   line-height: 56px;
 }
 
-nav.nav-extended {
+/*nav.nav-extended {
   height: auto;
 }
 
@@ -4192,7 +4192,7 @@ nav .input-field label.active {
 
 .navbar-fixed nav {
   position: fixed;
-}
+}*/
 
 @media only screen and (min-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
